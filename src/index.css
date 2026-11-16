@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --primary-yellow: #fdb813;
+    --primary-yellow-hover: #e09f00;
+    --dark-slate: #1e2229;
+    --dark-charcoal: #15181e;
+    --text-muted: #6b7280;
+  }
+
+  body {
+    font-family: 'Poppins', 'Segoe UI', system-ui, -apple-system, sans-serif;
+    color: #333333;
+    background-color: #ffffff;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Rajdhani', 'Poppins', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+}
+
+/* Custom animation & utilities */
+@keyframes pulseSlow {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.05); opacity: 0.9; }
+}
+
+.animate-pulse-slow {
+  animation: pulseSlow 3s infinite ease-in-out;
+}
